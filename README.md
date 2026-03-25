@@ -1,12 +1,12 @@
 # 🏥 Health Risk Prediction System
 
-A **multi-task neural network** that predicts risk levels (**Low, Medium, High**) for:
+A multi-task neural network that predicts risk levels (Low, Medium, High) for:
 
 - Diabetes  
 - Heart Disease  
 - Obesity  
 
-Includes a trained model and a **Streamlit dashboard** for real-time predictions.
+Includes a trained model and a Streamlit dashboard for real-time predictions.
 
 ---
 
@@ -22,8 +22,8 @@ Includes a trained model and a **Streamlit dashboard** for real-time predictions
 ---
 
 ## 📊 Dataset
-- **12 input features** (age, BMI, BP, lifestyle, family history, etc.)  
-- **3 output labels** (risk levels for each disease)
+- 12 input features (age, BMI, BP, lifestyle, family history, etc.)  
+- 3 output labels (risk levels for each disease)
 
 ---
 
@@ -31,12 +31,12 @@ Includes a trained model and a **Streamlit dashboard** for real-time predictions
 - Continuous → Standard Scaling  
 - Categorical → One-hot encoding  
 - Binary → 0/1 encoding  
-- Final input size: **22 features**
+- Final input size: 22 features
 
 ---
 
 ## 🧠 Model
-- Dense layers: **256 → 128 → 64 → 32**  
+- Dense layers: 256 → 128 → 64 → 32  
 - Activation: ReLU + BatchNorm + Dropout  
 - Multi-output (3 branches with Softmax)  
 - Learns shared features, then specializes per disease  
@@ -53,9 +53,9 @@ Includes a trained model and a **Streamlit dashboard** for real-time predictions
 ---
 
 ## 💻 Interface
-- Built with **Streamlit**  
+- Built with Streamlit  
 - Workflow:  
-  `User Input → Preprocessing → Model → Prediction`
+  User Input → Preprocessing → Model → Prediction
 
 ---
 
